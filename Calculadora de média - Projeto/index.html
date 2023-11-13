@@ -1,10 +1,37 @@
-<div class="container">
-    <h1 class="page-title">
-      Conversor de moedas
-    </h1>
-    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
-  </div>
-  <a href="https://alura.com.br/" target="_blank">
-    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-    <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png">
-  </a>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de moedas</title>
+</head>
+<body>
+  <h1>Conversor de moedas</h1>
+
+  <form action="" method="post">
+    <label for="moeda_origem">Moeda de origem:</label>
+    <select name="moeda_origem" id="moeda_origem">
+      <option value="BRL">Real</option>
+      <option value="USD">Dólar</option>
+      <option value="EUR">Euro</option>
+      <option value="GBP">Libra esterlina</option>
+      <option value="JPY">Iene japonês</option>
+    </select>
+
+    <label for="valor">Valor:</label>
+    <input type="number" name="valor" id="valor" placeholder="0.00">
+
+    <label for="moeda_destino">Moeda de destino:</label>
+    <select name="moeda_destino" id="moeda_destino">
+      <option value="BRL">Real</option>
+      <option value="USD">Dólar</option>
+      <option value="EUR">Euro</option>
+      <option value="GBP">Libra esterlina</option>
+      <option value="JPY">Iene japonês</option>
+    </select>
+
+    <button type="submit">Converter</button>
+  </form>
+
+  <div id="resultado"></div>
+</body>
+</html>
